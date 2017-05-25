@@ -16,7 +16,15 @@
 
 
 window.findNRooksSolution = function(n) {
-  var solution = undefined; //fixme
+  var solution = []; //fixme
+  var rookBoard = new Board({n: n});
+
+  //Inner function that adds another rook to our board up to n rooks
+    //establish a counter
+    //Base case -- when counter gets to n
+    //Failed case -- test our current iteration of the board to see if has any rook conflicts
+      //If it does, we don't do anything
+      //If it doesn't, we return that board state
 
   console.log('Single solution for ' + n + ' rooks:', JSON.stringify(solution));
   return solution;
